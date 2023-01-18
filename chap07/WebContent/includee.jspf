@@ -1,4 +1,6 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
+
+<!-- 인클루더에서 정의한 변수를 이 인클루디에서 사용가능하다. -->
 includer.jsp에서 지정한 번호: <%= number %>
 <p>
 <%

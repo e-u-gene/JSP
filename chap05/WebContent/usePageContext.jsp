@@ -6,6 +6,7 @@
 <%
 	HttpServletRequest httpRequest = 
 		(HttpServletRequest)pageContext.getRequest();
+/*  servlet의 자식객체로 강제 형변환시킴*/
 %>
 
 request 기본 객체와 pageContext.getRequest()의 동일여부:

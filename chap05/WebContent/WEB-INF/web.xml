@@ -18,4 +18,16 @@
 		<param-value>5</param-value>
 	</context-param>
 
+	<context-param>
+		<description>넥스트 레벨</description>
+		<param-name>nextLevel</param-name>
+		<param-value>2</param-value>
+	</context-param>
+
+	<context-param>
+		<description>광야</description>
+		<param-name>kwangYa</param-name>
+		<param-value>1</param-value>
+	</context-param>
+
 </web-app>

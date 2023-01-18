@@ -9,6 +9,7 @@
 	<jsp-config>
 		<jsp-property-group>
 			<url-pattern>/view/*</url-pattern>
+			<!-- autoInclude가 작동하는 이유! 경로를 써줌 variable.jspf파일 들어가보면 정의되어있음 -->
 			<include-prelude>/common/variable.jspf</include-prelude>
 			<include-coda>/common/footer.jspf</include-coda>
 		</jsp-property-group>

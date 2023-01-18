@@ -12,7 +12,8 @@
 </table>
 
 <jsp:include page="infoSub.jsp" flush="false">
-	<jsp:param name="type" value="A" />
+	<!-- 파라미터를 넘겨주는 형태 -->
+<jsp:param name="type" value="A" />
 </jsp:include>
 
 </body>
