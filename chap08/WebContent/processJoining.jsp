@@ -3,7 +3,18 @@
 	request.setCharacterEncoding("utf-8");
 %>
 <jsp:useBean id="memberInfo" class="chap08.member.MemberInfo" />
+<!-- 우선 객체를 만들고 그뒤에 setProperty를 함 -->
+
+
+<!--파라미터로 넘어온 값들을 다 넣어라..~이건 한땀한땀 작성하는 방식...
+근데 파라미터가 많아질 수록 노동력과 시간투입이 너무 많아짐.. 
+<jsp:setProperty name="memberInfo" property="id" param = "id"/>
+<jsp:setProperty name="memberInfo" property="name" param = "name"/>
+<jsp:setProperty name="memberInfo" property="email" param = "email"/>
+ -->
+ 
 <jsp:setProperty name="memberInfo" property="*" />
+<!-- 이 별표를 넣으면 id와 똑같은 프로퍼티들 전부가 들어가게 됨...! 즉, 자동으로매핑되어 프로퍼티 설정이 된다. -->
 <jsp:setProperty name="memberInfo" property="password"
 				 value="<%= memberInfo.getId() %>" />
 <html>

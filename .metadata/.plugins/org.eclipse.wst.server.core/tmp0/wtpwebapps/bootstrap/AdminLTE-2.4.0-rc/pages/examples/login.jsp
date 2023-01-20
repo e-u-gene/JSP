@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ page import="util.Cookies"%>    
 
 <!DOCTYPE html>
 <html>
@@ -39,14 +40,14 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
-<!--이 form 에서 액션을 index.jsp로 가라고 한것.  -->
-    <form action="../main/index.jsp" method="post">
+<!--이 form 에서 액션을 LoginCheck.jsp로 가라고 한것.  -->
+    <form action="loginCheck.jsp" method="post">
       <div class="form-group has-feedback">
         <input type="email" class="form-control" placeholder="Email" name = "email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" class="form-control" placeholder="Password" name = "password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
@@ -83,6 +84,7 @@
 <!-- /.login-box -->
 
 <!-- jQuery 3 -->
+
 <script src="../../bower_components/jquery/dist/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="../../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

@@ -4,4 +4,5 @@
   <module moduleId="org.eclipse.jst.jee.server:bootstrap" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:chap05" serverId="Tomcat v9.0 Server at localhost"/>
   <module moduleId="org.eclipse.jst.jee.server:chap07" serverId="Tomcat v9.0 Server at localhost"/>
+  <module moduleId="org.eclipse.jst.jee.server:chap09" serverId="Tomcat v9.0 Server at localhost"/>
 </modules>

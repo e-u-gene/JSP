@@ -3,6 +3,7 @@
 <%
 	response.addCookie(Cookies.createCookie("name", "최범균"));
 	response.addCookie(Cookies.createCookie("id", "madvirus", "/chap09", -1));
+	/* 초가 -1인데, 초가 0보다 작다는것은 쿠키의 유효기간이 무한하다는 의미이다. */
 %>
 <html>
 <head>

@@ -11,6 +11,7 @@
 
 	<%
 		if (cookies.exists("AUTH")) {
+			/*만약 로그인 하지 않았다면 AUTH 생성이 안되어 있을것*/
 	%>
 	아이디 "<%=cookies.getValue("AUTH")%>"로 로그인 한 상태
 	<%
