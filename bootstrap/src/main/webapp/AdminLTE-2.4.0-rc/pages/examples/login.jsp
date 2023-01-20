@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<%@ page import="util.Cookies"%>    
+<%-- <%@ page import="util.Cookies"%>  --%>   
 
 <!DOCTYPE html>
 <html>
@@ -40,8 +40,10 @@
   <div class="login-box-body">
     <p class="login-box-msg">Sign in to start your session</p>
 
+<!-- 내가쓴 방식은 상대패스
+절대패스는?<%= request.getContextPath()%>/AdiminLTE어쩌구/파일명/jsp파일명 -->
 <!--이 form 에서 액션을 LoginCheck.jsp로 가라고 한것.  -->
-    <form action="loginCheck.jsp" method="post">
+    <form action="sessionLogin.jsp" method="post">
       <div class="form-group has-feedback">
         <input type="email" class="form-control" placeholder="Email" name = "email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>

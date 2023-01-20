@@ -2,6 +2,7 @@
 <%
 	/*로그아웃할시에 세션날리기~  */
 	session.invalidate();
+   
 %>
 <html>
 <head><title>로그아웃</title></head>

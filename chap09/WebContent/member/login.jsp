@@ -7,6 +7,7 @@
 	if (id.equals(password)) {
 		/* // ID와 암호가 같으면 로그인에 성공한 것으로 판단. */
 		response.addCookie(Cookies.createCookie("AUTH", id, "/", -1));
+		/* 위코드가 돌아가려면 우선 import로 쿠키 클래스를 가져와야함. */
 %>
 <html>
 <head>

@@ -1,11 +1,25 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ page import="util.Cookies"%>
-<%
+    <%-- <%@ page import="util.Cookies"%> --%>
+<%-- <%
 	Cookies cookies = new Cookies(request);
+	/* 만약 쿠키가 없다면 로그인 페이지로 리다이렉트 시켜버림*/
 	if (!cookies.exists("AUTH"))
 		response.sendRedirect("../examples/login.jsp");
+%> --%>
+	<%
+	String memberId = (String)session.getAttribute("MEMBERID");
+	boolean login = memberId == null ? false : true;
+	/* memberId가 null이면 false 아니면 ture */
+		session.setMaxInactiveInterval(20);
+	/* 세션 만료값이 어디안에 놓든 상관없다.*/
+	if(!login){
+		response.sendRedirect("../examples/login.jsp");
+		}
+	
 %>
+
+	
 
 
 <!DOCTYPE html>
@@ -149,7 +163,8 @@
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
               <img src="../../dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs"><%=cookies.getValue("AUTH")%></span>
+             <!-- 여기서 쿠키로 되어있었는데 세션으로 바꾸어줘야 에러가 안난다. -->
+              <span class="hidden-xs"><%=session.getAttribute("MEMBERID")%></span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
@@ -182,7 +197,8 @@
                   <a href="#" class="btn btn-default btn-flat">Profile</a>
                 </div>
                 <div class="pull-right">
-                  <a href="../examples/logout.jsp" class="btn btn-default btn-flat">Sign out</a>
+                <!-- sign out 버튼을 눌렀을때, 로그아웃이 되야 하므로, 로그 아웃 jsp파일로 링크를 걸어줌. -->
+                  <a href="../examples/sessionLogout.jsp" class="btn btn-default btn-flat">Sign out</a>
                 </div>
               </li>
             </ul>

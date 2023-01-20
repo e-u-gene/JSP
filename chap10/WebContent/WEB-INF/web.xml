@@ -7,6 +7,7 @@
          version="3.1">
 
 	<session-config>
+	<!-- <>사이의 숫자는 분단위이다. -->
 		<session-timeout>60</session-timeout>
 	</session-config>
 </web-app>

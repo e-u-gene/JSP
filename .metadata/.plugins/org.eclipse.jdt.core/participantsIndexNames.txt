@@ -21,6 +21,8 @@ D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\21530
 \chap08\src
 D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4056401756.index
 \chap03\src
+D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\676831220.index
+\bootstrap.old\src\main\java
 D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1923403279.index
 \chap09\src
 D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1094781183.index
@@ -45,6 +47,8 @@ D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\34744
 \bootstrap\src\main\java
 D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\407773894.index
 \chap07\src
+D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1868879329.index
+\bootstrap.old\src\main\java
 D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3743784284.index
 \chap03\src
 D:\dev\workspace\jsp\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1177341158.index

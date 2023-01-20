@@ -1,5 +1,6 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
 <%
+/*강제로 세션 종료  */
 	session.invalidate();
 %>
 <html>

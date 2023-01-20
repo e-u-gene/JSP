@@ -2,6 +2,7 @@
 <%
 	String memberId = (String)session.getAttribute("MEMBERID");
 	boolean login = memberId == null ? false : true;
+	/* memberId가 null이면 false 아니면 ture */
 %>
 <html>
 <head>
