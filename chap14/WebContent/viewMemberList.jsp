@@ -43,6 +43,7 @@ MEMBER 테이블의 내용
 		while(rs.next()) {
 %>
 <tr>
+<!-- 표현식으로 출력 -->
 	<td><%= rs.getString("NAME") %></td>
 	<td><%= rs.getString("MEMBERID") %></td>
 	<td><%= rs.getString("EMAIL") %></td>

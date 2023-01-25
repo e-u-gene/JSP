@@ -14,12 +14,15 @@
 <body>
 
 <%
+// 1. jdbc 드라이버 로딩
 	Class.forName("com.mysql.jdbc.Driver");
 	
+
 	Connection conn = null;
 	Statement stmt = null;
 	ResultSet rs = null;
-	
+
+	// try - catch로 받음
 	try {
 		String jdbcDriver = "jdbc:mysql://localhost:3306/chap14?" +
 							"useUnicode=true&characterEncoding=utf8";
@@ -28,10 +31,15 @@
 		String query = 
 		   "select * from MEMBER where MEMBERID = '"+memberID+"'";
 		
+		//2.데이터 베이스 커넥션 생성
 		conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);
+		
+		//3. 스테이트먼트 생성
 		stmt = conn.createStatement();
 		
+		// 쿼리 실행
 		rs = stmt.executeQuery(query);
+		//
 		if( rs.next() ) {
 %>
 <table border="1">

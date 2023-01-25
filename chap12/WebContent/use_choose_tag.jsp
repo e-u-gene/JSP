@@ -6,7 +6,19 @@
 </head>
 <body>
 
+	<%-- <%
+	String name = "bk";
+	switch(name){
+		case "bk":
+		 out.println("당신의 이름은 bk입니다.");		
+		 break;
+		default:
+		-> 이거랑 밑의 c태그랑 동일.
+	}
+%>
+ --%>
 	<ul>
+	<!-- 셋 중 하나 일치하면, 그다음으로 넘어가지 않음...!  -->
 		<c:choose>
 			<c:when test="${param.name == 'bk'}">
 				<li>당신의 이름은 ${param.name} 입니다.

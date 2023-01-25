@@ -6,6 +6,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\dev\workspace\jsp\chap14"/>
+			<item value="D:\dev\workspace\jsp\chap12"/>
+			<item value="D:\dev\workspace\jsp\chap11"/>
 			<item value="D:\dev\workspace\jsp\chap10"/>
 			<item value="D:\dev\workspace\jsp\chap09"/>
 			<item value="D:\dev\workspace\jsp\chap08"/>

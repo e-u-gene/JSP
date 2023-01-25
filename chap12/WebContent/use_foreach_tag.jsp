@@ -8,6 +8,7 @@
 %>
 <c:set var="intArray" value="<%=new int[] { 1, 2, 3, 4, 5 }%>" />
 <c:set var="map" value="<%=mapData%>" />
+<!--map이라는 변수에 맵데이터를 넣겠다...  -->
 <html>
 <head>
 <title>forEach 태그</title>
@@ -31,6 +32,8 @@
 
 	<c:forEach var="i" items="${intArray}" begin="2" end="4"
 		varStatus="status">
+		
+		<!-- i는 가져온값 status는 값을 가져온 위치..?를 지정 -->
 	${status.index}-${status.count}-[${i}] <br />
 	</c:forEach>
 

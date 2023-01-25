@@ -9,6 +9,7 @@
 
 	<ul>
 		<li>${searchUrl}</li>
+		<!-- contextPath가 같이 나옴 -->
 		<li><c:url value="/use_if_tag.jsp" /></li>
 		<li><c:url value="./use_if_tag.jsp" /></li>
 	</ul>

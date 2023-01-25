@@ -5,6 +5,8 @@ import java.util.Map;
 
 public class Thermometer {
 
+//	locationCelsiusMap 필드를 가지고 있으며, 키는 문자열 밸류는 더블형!
+	
 	private Map<String, Double> locationCelsiusMap = 
 			new HashMap<String, Double>();
 

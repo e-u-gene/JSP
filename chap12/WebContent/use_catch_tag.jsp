@@ -1,5 +1,6 @@
 <%@ page contentType = "text/html; charset=utf-8" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!-- c태그 사용하기위해 태그 라이브러리 경로를 적어줘야함. -->
 <html>
 <head><title>catch 태그</title></head>
 <body>
