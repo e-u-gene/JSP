@@ -27,6 +27,7 @@ public class DBCPInit extends HttpServlet {
 
 	private void loadJDBCDriver() {
 		try {
+			// 이게 실행되려면 connector j가 있어야 함.
 			Class.forName("com.mysql.jdbc.Driver");
 		} catch (ClassNotFoundException ex) {
 			throw new RuntimeException("fail to load JDBC Driver", ex);
@@ -61,6 +62,7 @@ public class DBCPInit extends HttpServlet {
 			Class.forName("org.apache.commons.dbcp2.PoolingDriver");
 			PoolingDriver driver = 
 					(PoolingDriver) DriverManager.getDriver("jdbc:apache:commons:dbcp:");
+			// 커넥션 풀 이름이 guestbook임.
 			driver.registerPool("guestbook", connectionPool);
 		} catch (Exception e) {
 			throw new RuntimeException(e);

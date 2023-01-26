@@ -9,6 +9,7 @@ public class MessageListView {
 	private int messageTotalCount;
 	private int currentPageNumber;
 	private List<Message> messageList;
+	//비어있으나 자리를 10개를 생성.
 	private int pageTotalCount;
 	private int messageCountPerPage;
 	private int firstRow;

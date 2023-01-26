@@ -1,5 +1,7 @@
 package guestbook.model;
 
+
+// 자바빈 클래스
 public class Message {
 
 	private int id;

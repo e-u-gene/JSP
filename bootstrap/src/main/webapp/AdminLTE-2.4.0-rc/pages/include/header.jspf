@@ -362,6 +362,7 @@
           </a>
           <ul class="treeview-menu">
           <!-- ?로 get방식 으로 주소 할당 -->
+            <li><a href="../examples/memberTable.jsp"><i class="fa fa-circle-o"></i> Member테이블</a></li>
             <li><a href="../examples/dataTables.jsp?email=<%=request.getParameter("email") %>"><i class="fa fa-circle-o"></i> DataTables</a></li>
             <li><a href="../examples/invoice.html"><i class="fa fa-circle-o"></i> Invoice</a></li>
             <li><a href="../examples/profile.html"><i class="fa fa-circle-o"></i> Profile</a></li>

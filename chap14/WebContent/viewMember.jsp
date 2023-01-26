@@ -29,7 +29,8 @@
 		String dbUser = "jspexam";
 		String dbPass = "jsppw";
 		String query = 
-		   "select * from MEMBER where MEMBERID = '"+memberID+"'";
+		  /* 요 밑에가 실행되는 쿼리문 */
+				"select * from MEMBER where MEMBERID = '"+memberID+"'";
 		
 		//2.데이터 베이스 커넥션 생성
 		conn = DriverManager.getConnection(jdbcDriver, dbUser, dbPass);

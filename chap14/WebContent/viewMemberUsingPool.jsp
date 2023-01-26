@@ -21,7 +21,9 @@ MEMBER 테이블의 내용
 	
 	try {
 		String jdbcDriver = "jdbc:apache:commons:dbcp:chap14";
+		// member테이블 전부를 가져오고, memberid 기준으로 오름차순 정렬~
 		String query = "select * from MEMBER order by MEMBERID";
+		// jdbcDriver 커넥션 풀에서 커넥션 하나 가져오라는 의미.
 		conn = DriverManager.getConnection(jdbcDriver);
 		stmt = conn.createStatement();
 		rs = stmt.executeQuery(query);

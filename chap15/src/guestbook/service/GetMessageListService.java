@@ -11,24 +11,30 @@ import jdbc.JdbcUtil;
 import jdbc.connection.ConnectionProvider;
 
 public class GetMessageListService {
+	// 얘도 싱글톤으로 설계되어있음
+	// 여기서 외부에서 객체 호출할 생성자를 만들어준것
 	private static GetMessageListService instance = new GetMessageListService();
 
 	public static GetMessageListService getInstance() {
 		return instance;
 	}
 
+	// 생성자가 프라이빗이므로 외부에서 객체 생성 불가능.
 	private GetMessageListService() {
 	}
 
 	private static final int MESSAGE_COUNT_PER_PAGE = 3;
 
+	// 메소드가 하나 존재함.
 	public MessageListView getMessageList(int pageNumber) {
 		Connection conn = null;
 		int currentPageNumber = pageNumber;
 		try {
+			// 커넥션 프로바이더 클래스에서 겟 커넥션 메소드 호출
 			conn = ConnectionProvider.getConnection();
 			MessageDao messageDao = MessageDao.getInstance();
-
+			
+			// 받은 conn 을 메시지 다오의 selectcount로 넘기는것.
 			int messageTotalCount = messageDao.selectCount(conn);
 
 			List<Message> messageList = null;

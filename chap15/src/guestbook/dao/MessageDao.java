@@ -17,9 +17,10 @@ public class MessageDao {
 	public static MessageDao getInstance() {
 		return messageDao;
 	}
-	
+	// 생성자 -> 
 	private MessageDao() {}
 	
+	//메소드!
 	public int insert(Connection conn, Message message) throws SQLException {
 		PreparedStatement pstmt = null;
 		try {
@@ -67,6 +68,7 @@ public class MessageDao {
 		Statement stmt = null;
 		ResultSet rs = null;
 		try {
+			// 커넥션에서 스테이트먼트 객체를 얻어서,
 			stmt = conn.createStatement();
 			rs = stmt.executeQuery("select count(*) from guestbook_message");
 			rs.next();
