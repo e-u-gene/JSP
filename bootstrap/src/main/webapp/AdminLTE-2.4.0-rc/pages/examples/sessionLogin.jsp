@@ -8,7 +8,7 @@
 		/* 자동 형변환 된것이다. id안에 어떤값이든 들어갈 수 있으므로 object 타입인데
 		우린 string값을 줬으므로, 자동으로 형변환 된것.*/
 		
-		response.sendRedirect("../main/index.jsp");
+		response.sendRedirect("/WEB-INF/main/index.jsp");
 	 
 		
 %>

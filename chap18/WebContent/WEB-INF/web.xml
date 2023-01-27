@@ -22,11 +22,14 @@
 		<url-pattern>*.do</url-pattern>
 	</servlet-mapping>
 
+	
 	<servlet>
+	<!--ControllerUsingFile 서블릿  -->
 		<servlet-name>ControllerUsingFile</servlet-name>
 		<servlet-class>mvc.controller.ControllerUsingFile</servlet-class>
 		<init-param>
 			<param-name>configFile</param-name>
+			<!-- configFile -> value는 /WEB-INF/commandHandler.propertie 요경로에 존재 -->
 			<param-value>/WEB-INF/commandHandler.properties</param-value>
 		</init-param>
 		<load-on-startup>1</load-on-startup>
@@ -36,6 +39,7 @@
 		<servlet-name>ControllerUsingFile</servlet-name>
 		<url-pattern>/controllerUsingFile</url-pattern>
 	</servlet-mapping>
+	<!-- /controllerUsingFile 요청 들어오면 controllerUsingFile 서블릿 실행시켜라 -->
 
 	<servlet>
 		<servlet-name>SimpleController</servlet-name>

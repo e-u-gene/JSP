@@ -10,6 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns = "/hello")
+// 헬로우치면 두겟메소드가 돌아서 밑의 프린트객체가 실행된다.
 public class HelloServlet extends HttpServlet {
 
 	@Override

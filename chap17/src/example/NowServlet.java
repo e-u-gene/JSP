@@ -10,8 +10,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class NowServlet extends HttpServlet {
+	//Servlet : http 통신이 가능한 자바 클래스
 
 	@Override
+	// doget을 오버라이딩함.
+	// get방식으로 요청하면  doget 메소드가 돌아감..?
 	protected void doGet(HttpServletRequest request,
 	HttpServletResponse response) throws ServletException, IOException {
 		response.setContentType("text/html; charset=utf-8");

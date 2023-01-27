@@ -6,6 +6,7 @@
 		<item value="Apache Tomcat v9.0"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Temp\chap17.war"/>
 		<item value="C:\Temp\chap05.war"/>
 	</list>
 </section>
